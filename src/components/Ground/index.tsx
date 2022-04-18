@@ -1,10 +1,6 @@
 import { Reflector, ReflectorProps, useTexture } from "@react-three/drei";
-import { MeshProps } from "@react-three/fiber";
-import React, { useRef } from "react";
+import React from "react";
 import * as THREE from 'three'
-
-
-
 
 export const Ground = ({ ...props }: ReflectorProps): JSX.Element => {
     const [floor, normal] = useTexture(['surface_img.png', '/surface_norm.jpg'])
